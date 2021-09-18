@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js.js"></script>
+</head>
+<body>
+<form name="form1">
+    <h3>Идентификаторы</h3>
+    <label>
+        Задание 1 - Объявите переменную и запишите в нее свое имя как литерал строки.<br>
+        <input type="submit" onclick="alert(literal)">
+    </label>
+    <hr>
+    <label>
+        Задание 2 - Объявите константу и запишите в нее год своего рождения как литерал числа.<br>
+        <input type="submit" onclick="alert('Мой год рождения:'+God)">
+    </label>
+    <hr>
+    <label>
+        Задание 3 Создайте функцию, которая печатает приветствие и имеет один аргумент: name.<br>
+        <input type="text" name="stN" ><br><br>
+        <input type="submit" onclick="hello(document.form1.stN.value)">
+    </label>
+    <hr>
+    <h3>Циклы</h3>
+    <label>
+        Задание 4 Реализуйте функцию range(start: number, end: number): array которая отдает массив чисел из диапазона [15, 30] включая крайние числа.<br>
+        <input type="text" name="stStart" >-- <input type="text" name="stEnd" ><br><br>
+        <input type="submit" onclick="Zd4(document.form1.stStart.value,document.form1.stEnd.value)">
+    </label>
+    <hr>
+    <label>
+        Задание 5 Реализуйте функцию rangeOdd(start: number, end: number): array которая отдает массив нечетных чисел из диапазона [15, 30] включая крайние числа. включая крайние числа.<br>
+        <input type="text" name="stStart2" >-- <input type="text" name="stEnd2" ><br><br>
+        <input type="submit" onclick="Zd5(document.form1.stStart2.value,document.form1.stEnd2.value)">
+    </label>
+    <hr>
+    <h3>Вложенные вызовы функций в цикле</h3>
+    <label>
+        Задание 7 Реализуйте функцию average с сигнатурой average(a: number, b: number): number вычисляющую среднее арифметическое своих аргументов.<br>
+        <input type="text" name="stStart3" >-- <input type="text" name="stEnd3" ><br><br>
+        <input type="submit" onclick="Zd7(document.form1.stStart3.value,document.form1.stEnd3.value)">
+    </label>
+    <hr>
+    <label>
+        Задание 8 Реализуйте функцию square с сигнатурой square(x: number): number вычисляющую квадрат своего аргумента.<br>
+        <input type="text" name="stStart4" ><br><br>
+        <input type="submit" onclick="Zd8(document.form1.stStart4.value)">
+    </label>
+    <hr>
+    <label>
+        Задание 9 Реализуйте функцию cube с сигнатурой cube(x: number): number вычисляющую куб своего аргумента.<br>
+        <input type="text" name="stStart5" ><br><br>
+        <input type="submit" onclick="Zd9(document.form1.stStart5.value)">
+    </label>
+    <hr>
+    <label>
+        Задание 10 Вызовите функции square и cube в цикле от 0 до 9, вычисляя, соответственно квадрат и куб от переменной цикла. Передайте квадрат и куб на каждой итерации в функцию average. Результаты сложите в массив и возвратите из функции calculate.<br>
+        <input type="submit" onclick="Zd10()">
+    </label>
+    <hr>
+</form>
+</body>
+</html>
